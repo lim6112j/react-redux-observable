@@ -1,13 +1,18 @@
+// @flow
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonImg, IonItem } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 
 const Tab1: React.FC = () => {
+  const image = '../assets/logo.png';
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
+          <IonItem>
+            <IonImg src={image} />
+          </IonItem>
           <IonTitle>Tab 1</IonTitle>
         </IonToolbar>
       </IonHeader>

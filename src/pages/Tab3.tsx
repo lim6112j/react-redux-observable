@@ -73,7 +73,9 @@ const Tab3: React.FC = (props) => {
           <IonRow>
             <IonCol>
   <IonText>{value.count} {selector.ping.isPinging? 'ping true': 'ping false'}</IonText>
-  {/* <IonText>{selector.users.user}</IonText> */}
+            </IonCol>
+            <IonCol>
+  <IonText>{JSON.stringify(selector.users.user)}</IonText>
             </IonCol>
             <IonButton onClick={() => dispatch({type: 'increment', payload: ''})}>inc</IonButton>
             <IonButton onClick={() => dispatch({type: 'decrement', payload: ''})}>dec</IonButton>

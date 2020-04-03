@@ -1,0 +1,8 @@
+{
+  "appId": "com.kosac.defora.web",
+  "appName": "defora-web-ionic-react",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "cordova": {}
+}

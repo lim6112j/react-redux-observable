@@ -6,6 +6,8 @@ import './Tab1.css';
 
 const Tab1: React.FC = () => {
   const image = '../assets/logo.png';
+  console.log('Currently running on ' + process.env.NODE_ENV + ' mode');
+  console.log('socket endpoint => ', process.env.REACT_APP_SOCKET_ENDPOINT);
   return (
     <IonPage>
       <IonHeader>
@@ -13,7 +15,7 @@ const Tab1: React.FC = () => {
           <IonItem>
             <IonImg src={image} />
           </IonItem>
-          <IonTitle>Tab 1</IonTitle>
+          <IonTitle>TAB1</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
